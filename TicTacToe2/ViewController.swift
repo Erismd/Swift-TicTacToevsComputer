@@ -1,4 +1,3 @@
-
 //  ViewController.swift
 //  TicTacToe2
 //
@@ -10,25 +9,23 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var button: UIButton!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        //button.layer.shadowColor = UIColor.gray.cgColor
+        // button.layer.shadowColor = UIColor.gray.cgColor
         button.layer.shadowColor = UIColor.gray.cgColor
         button.layer.shadowRadius = 15
         button.layer.shadowOpacity = 1
         button.layer.cornerRadius = 15
-        
+
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
-        
-    }
-    
-}
 
+    }
+
+}
 
 extension UIColor {
   convenience init(hex: String) {
